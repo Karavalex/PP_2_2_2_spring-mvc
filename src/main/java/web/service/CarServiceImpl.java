@@ -6,12 +6,13 @@ import web.dao.CarDao;
 import web.model.Car;
 
 import java.util.List;
+
 @Service
 public class CarServiceImpl implements CarService {
 
-private final CarDao carDao;
+    private final CarDao carDao;
 
-@Autowired
+    @Autowired
     public CarServiceImpl(CarDao carDao) {
         this.carDao = carDao;
     }
